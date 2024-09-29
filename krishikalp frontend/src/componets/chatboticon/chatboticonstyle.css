@@ -1,0 +1,49 @@
+.chatboticon {
+    width: 5vw;
+    height: 10vh;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2%;
+    left: 94%;
+    z-index: 99999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* Font size inside the icon */
+.chatboticon i {
+    font-size: 3vh;
+}
+
+/* Responsive adjustments */
+
+/* For tablet devices (up to 768px) */
+@media (max-width: 768px) {
+    .chatboticon {
+        width: 8vw;
+        height: 8vh;
+        left: 90%; /* Adjust position for smaller screens */
+    }
+
+    .chatboticon i {
+        font-size: 2.5vh;
+    }
+}
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .chatboticon {
+        width: 12vw;
+        height: 7vh;
+        left: 85%; /* Adjust position for mobile */
+    }
+
+    .chatboticon i {
+        font-size: 2vh; /* Adjust icon size for mobile */
+    }
+}
+

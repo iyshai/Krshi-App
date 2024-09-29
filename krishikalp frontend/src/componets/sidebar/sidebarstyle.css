@@ -1,0 +1,104 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16vw;
+  height: 100vh;
+  background-color: white;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10vh;
+  z-index: 9999;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+}
+
+/* When the sidebar is opening */
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+/* When the sidebar is closing */
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+/* Sidebar item styles */
+.sidebaritem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+  color: #5a5b60;
+  gap:1vw;
+}
+
+.sidebaritem:hover {
+  background-color: #7AD46C;
+  border-radius: 5px;
+  color: white;
+}
+
+.sidebaritem h1 {
+  font-size: 1vw;
+  font-weight: 520;
+}
+
+/* Responsive adjustments */
+
+/* For tablet devices (up to 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 25vw; /* Increase the width for tablets */
+      padding: 2vw;
+  }
+
+  .sidebaritem h1 {
+      font-size: 1.2rem; /* Adjust font size for better readability */
+  }
+}
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+      width: 40vw; /* Sidebar takes more space on mobile devices */
+      padding: 3vw;
+      padding-top: 9vh;
+  }
+
+  .sidebaritem h1 {
+      font-size: 1rem; /* Further reduce the font size for mobile */
+  }
+
+  .sidebaritem {
+      padding: 8px; /* Adjust padding for smaller devices */
+  }
+}
+
+  
+  

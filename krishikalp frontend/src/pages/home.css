@@ -1,0 +1,187 @@
+.homemidpart{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    top: 20%;
+    left: 35%;
+    position: absolute;
+}
+
+.searchpart{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.textparthome{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    height: 7vh;
+    border-radius: 2vh;
+    padding: 1vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.homemidpart textarea{
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    width: 100%;
+    height: 3.5vh;
+    margin-left: 1vw;
+}
+
+.homemidpart i{
+    cursor: pointer;
+}
+
+.sendparthome {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 3.3vw;
+    height: 7vh;
+    border-radius: 2vh;
+    padding: 1vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.lang1{
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-width: 5vw;
+    height: 3vh;
+    border-radius: 1vh;
+    padding: 1vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.languagepart{
+    display: flex;
+    gap: 1vw;
+}
+
+.homebottompart{
+    display: flex;
+    gap: 3vw;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+.bottompart {
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 4.6vw;
+    height: 10vh;
+    border-radius: 50%;
+    padding: 1vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.bottompart:hover {
+    background-color: #7AD46C;
+    color: white;
+}
+
+.bottompart i {
+    font-size: 3vh;
+}
+
+.lang1 h1{
+    font-size: 1vw;
+    font-weight: 500;
+}
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For tablets and smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .homemidpart {
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .textparthome {
+        width: 50vw;
+        height: 6vh;
+    }
+
+    .sendparthome {
+        width: 6vw;
+        height: 6vh;
+    }
+
+    .lang1 {
+        min-width: 10vw;
+        height: 4vh;
+    }
+    .lang1 h1{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .bottompart {
+        width: 7vw;
+        height: 7vh;
+    }
+}
+
+/* For mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .homemidpart {
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 3vw;
+    }
+
+    .textparthome {
+        width: 75vw;
+        height: 5vh;
+    }
+
+    .sendparthome {
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .lang1 {
+        min-width: 15vw;
+        height: 3vh;
+    }
+    .lang1 h1{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .languagepart{
+        padding: 2vw;
+    }
+    .homebottompart {
+        gap: 5vw;
+        bottom: 10%;
+    }
+    
+    .bottompart {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .bottompart i {
+        font-size: 2.5vh;
+    }
+}
+
+

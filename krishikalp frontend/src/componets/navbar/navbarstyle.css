@@ -1,0 +1,83 @@
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    z-index: 999999;
+}
+
+.nav-leftside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.nav-midside {
+    width: 15vw;
+    height: 8vh;
+}
+
+.nav-midside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbarcircle {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    width: 2.9vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* Responsive adjustments */
+
+/* For tablet devices (up to 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        height: 7vh;
+        padding: 0 2vw;
+    }
+
+    .nav-midside {
+        width: 20vw;
+        height: 7vh;
+    }
+
+    .navbarcircle {
+        width: 5vw;
+        height: 5vh;
+    }
+}
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        height: 6vh;
+        padding: 0 3vw;
+    }
+
+    .nav-leftside {
+        gap: 0.5vw;
+    }
+
+    .nav-midside {
+        width: 30vw;
+        height: 6vh;
+    }
+
+    .navbarcircle {
+        width: 9vw;
+        height: 5vh;
+    }
+}
+

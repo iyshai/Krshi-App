@@ -1,0 +1,78 @@
+/* Base Styles */
+.profileMain {
+    width: 10vw;
+    height: 24vh;
+    background-color: white;
+    position: absolute;
+    border-radius: 5%;
+    right: 0.5%;
+    top: 9%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 999;
+}
+
+.profilepart {
+    display: flex;
+    gap: 1vw;
+    margin: 1vw;
+    cursor: pointer;
+}
+.profilepart h1 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {  /* For tablets and small laptops */
+    .profileMain {
+        width: 15vw;
+        height: 30vh;
+        top: 10%;
+        right: 1%;
+    }
+
+    .profilepart {
+        gap: 1.5vw;
+        margin: 1.5vw;
+    }
+    .profilepart h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {  /* For tablets and large smartphones */
+    .profileMain {
+        width: 25vw;
+        height: 35vh;
+        top: 12%;
+        right: 2%;
+    }
+
+    .profilepart {
+        gap: 2vw;
+        margin: 2vw;
+    }
+    .profilepart h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 480px) {  /* For smartphones */
+    .profileMain {
+        width: 40vw;
+        height: 23vh;
+        top: 7%;
+        right: 3%;
+    }
+
+    .profilepart {
+        gap: 3vw;
+        margin: 3vw;
+    }
+    .profilepart h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
